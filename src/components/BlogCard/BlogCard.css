@@ -1,0 +1,145 @@
+.screen-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    background-color: #D2D6DB;
+    width: 1440px;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container {
+    width: 340px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-radius: 16px;
+
+}
+
+.image-container {
+    width: 340px;
+    height: 288px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0px;
+}
+
+.details-container {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.type-container {
+    background-color: #F0FDF4;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #15803D;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.title-container {
+    color: #171717;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtitle-container {
+    color: #525252;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button-container {
+    color: #4338CA;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Styles for devices with a max width of 768px (tablets, mobile devices) */
+@media (max-width: 768px) {
+    .app-container {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .blog-container {
+      width: 100%;
+    }
+  
+    .image-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .details-container {
+      gap: 12px;
+      padding: 12px;
+    }
+  
+    .title-container {
+      font-size: 16px;
+    }
+  
+    .subtitle-container {
+      font-size: 14px;
+    }
+  
+    .button-container {
+      font-size: 12px;
+    }
+  }
+  
+  /* Styles for devices with a max width of 480px (small mobile devices) */
+  @media (max-width: 480px) {
+    .app-container {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .blog-container {
+      width: 100%;
+    }
+  
+    .image-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .details-container {
+      gap: 8px;
+      padding: 8px;
+    }
+  
+    .title-container {
+      font-size: 14px;
+    }
+  
+    .subtitle-container {
+      font-size: 12px;
+    }
+  
+    .button-container {
+      font-size: 10px;
+    }
+  }
